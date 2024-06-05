@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #00146e, #3a3a3a);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    padding: 10px;
+    text-align: left;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.navbar li:hover {
+    background-color: #263268;
+}
+
+.sub-menu {
+
+    display: none;
+    padding-left: 20px;
+}
+
+.sub-menu li {
+    padding: 5px 0;
+    margin-left: 25px;
+}
+.sub-menu li:hover {
+    padding: 5px 0;
+    background-color: #2a40a1;
+}
+
+i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.container {
+    
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Ajusta la altura según sea necesario */
+}
+
+.btn {
+
+    background-color: #00146e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #263268;
+}
+
+.btnExaminar {
+    margin: 5px;
+    background-color: #00146e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btnExaminar:hover {
+    background-color: #263268;
+}
+.btnEliminar{
+    margin: 5px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.btnEliminar:hover {
+    background-color: #682626;
+}
+
+.logo {
+    margin: 7px;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px; /* Ajusta el valor según el grado de redondez deseado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra difuminada alrededor de la imagen */
+    background: linear-gradient(135deg, #00146e, #ffffff); /* Agrega un degradado de color */
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1300px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #002fff;
+}
+
+th {
+    background-color: #00146e;
+    color: white;
+}
+
+tr:hover {
+    background-color: #263268;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"], 
+input[type="number"].input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+
+}
+
+button[type="submit"] {
+    background-color: #00146e;
+    width: 50%;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #263268;
+}
+
+.alert-success {
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+}
+
+.gastos {
+    display: flex;
+    justify-content: center;
+}
+
+.gasto {
+    width: 300px;
+    background-color: #263268; /* Color de fondo */
+    max-width: 300px; /* Tamaño máximo */
+    margin: 10px; /* Espaciado entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    border-radius: 10px; /* Redondear las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombreado */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+}
+.gasto1 {
+    background-color: #ffffff; /* Color de fondo */
+    max-width: 300px; /* Tamaño máximo */
+    margin: 10px; /* Espaciado entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    border-radius: 10px; /* Redondear las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombreado */
+    width: 300px;
+    font-size: 18px; /* Tamaño de fuente */
+
+}

@@ -1,0 +1,191 @@
+.navbar {
+  height: 150px;
+  overflow: hidden;
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+  display: flex; /* Usa flexbox */
+  justify-content: space-between; /* Distribuye el espacio entre logo y enlaces */
+  align-items: center; /* Alinea verticalmente el logo y los enlaces */
+  padding: 0 10%; /* Añade un poco de espacio a los lados */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Añade sombra en la parte inferior */
+  position: relative; /* Opcional: absolute, fixed, sticky */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+/* Contenedor para los enlaces para agruparlos juntos */
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Enlaces dentro del navbar */
+.navbar a {
+  font-size: 16px; /* Tamaño de la fuente */
+  text-align: center;
+  padding: 10px 15px; /* Espaciado interno ajustado para un look más minimalista */
+  text-decoration: none; /* Remueve el subrayado de los enlaces */
+  color: #333; /* Color de texto más suave */
+  background-color: transparent; /* Fondo transparente para empezar */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave solo para color y fondo */
+}
+
+.navbar a:hover, .navbar a:focus {
+  color: #555; /* Cambio sutil de color al pasar el ratón o enfocar */
+  background-color: #f8f8f8; /* Fondo ligeramente diferente al interactuar */
+}
+
+.logo{
+  height: 150px; /* Ajusta la altura del logo según tus necesidades */
+}
+/* Estilos base para los contenedores de sección */
+.section-container {
+  margin: 200px 10%;
+  box-shadow: 0 -50px 15px -40px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.title-container{
+  margin-bottom: 15px;
+  display: flex;
+  margin: 50px;
+  font-size: 22px;
+}
+.space{
+  width: 500px;
+}
+
+.text-container {
+  padding: 0 20px;
+  font-size: 20px;
+  margin: 50px;
+}
+.container {
+  display: flex;
+  min-height: 500px;
+  height: auto;
+  width: 100vw;
+  box-shadow: 0 -50px 15px -40px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.container2 {
+  display: flex;
+  height: 700px;
+  width: 100vw; /* 100% del ancho del viewport */
+  box-shadow: 0 -50px 15px -40px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.img{
+  margin-top: 50px;
+  font-size: 20px;
+  width: 50%; /* Cada caja ocupa el 50% del contenedor */
+  height: auto; /* Altura completa del contenedor */
+}
+.box {
+  margin-top: 50px;
+  font-size: 20px;
+  width: 50%; /* Cada caja ocupa el 50% del contenedor */
+  height: auto; /* Altura completa del contenedor */
+}
+.box2 {
+margin-top: 150px;
+align-items: center;
+text-align: center;
+}
+.box3 {
+  margin-top: 50px;
+  width: 50%; /* Cada caja ocupa el 50% del contenedor */
+  height: 800px; /* Altura completa del contenedor */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  display: block; /* Hace que el label tome su propia línea */
+  margin-bottom: 2px; /* Espacio antes del input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 300px;
+  height: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: auto; /* Auto-ajuste a la altura */
+  padding: 10px; /* Más espacio interno para texto */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #bbb;
+  outline: none;
+}
+
+button {
+  background-color: #333; /* Fondo oscuro para el botón */
+  color: white; /* Texto claro para el botón */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer; /* Cursor indica que es clickeable */
+}
+
+input[type="submit"]:hover {
+  background-color: #555; /* Cambio de color al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+  .container, .container2 {
+    display: block;
+    width: 100%;
+    min-height: auto;
+    height: auto;
+  }
+
+  .img, .box, .box3 {
+    width: 100%;
+    margin-top: 20px; /* Ajusta según sea necesario */
+    height: auto; /* Altura automática para adaptarse al contenido */
+  }
+  .box2{
+    display: none;
+  }
+
+  .navbar-links, .links {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 10px; /* Aumenta el espacio para facilitar la interacción táctil */
+  }
+
+  .text-container, .title-container {
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    margin: 20px 0; /* Aumenta el margen para una mejor separación */
+    font-size: 18px; /* Ajusta el tamaño del texto para mejorar la legibilidad */
+  }
+
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto; /* Centra el logo */
+    height: auto; /* Ajusta la altura según sea necesario */
+    max-width: 100%; /* Asegura que el logo no sea más ancho que la pantalla */
+  }
+}
